@@ -21,3 +21,14 @@ document.getElementById("operator").innerHTML = txt1 + " " + txt2;
 txt1 = "What a very ";
 txt1 += "nice day";
 document.getElementById("operator1").innerHTML = txt1;
+
+//Object
+var person = {
+  firstName : "John",
+  lastName  : "Doe",
+  age     : 50,
+  eyeColor  : "blue"
+};
+
+document.getElementById("object").innerHTML =
+person.firstName + " is " + person.age + " years old and " + person.eyeColor + " eyes." ;
