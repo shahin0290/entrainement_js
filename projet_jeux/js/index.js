@@ -1,3 +1,21 @@
+//BulbOn & BulbOff
+function buttonOn() {
+    document.getElementById('myImage').src='../images/pic_bulbon.gif';
+}
+
+function buttonOff() {
+    document.getElementById('myImage').src='../images/pic_bulboff.gif';
+}
+
+//Diplay none & block
+function displayNone() {
+    document.getElementById('demo').style.display='none';
+}
+
+function displayBlock() {
+    document.getElementById('demo').style.display='block';
+}
+
 //Statement 
 document.getElementById("demotest").innerHTML = "Hello Dolly.";
 
@@ -47,3 +65,8 @@ function myFunction(a, b) {
 function myFunction1(a, b) {
     return a + b;
 }
+
+//function displayDate
+function displayDate() {
+    document.getElementById("date").innerHTML = Date();
+  }
