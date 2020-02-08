@@ -12,3 +12,12 @@ document.getElementById("demoVariable").innerHTML =
 var carName = "Volvo";
 document.getElementById("variables").innerHTML = carName; 
 
+//operator
+var txt1 = "John";
+var txt2 = "Doe";
+document.getElementById("operator").innerHTML = txt1 + " " + txt2;
+
+//operator +=
+txt1 = "What a very ";
+txt1 += "nice day";
+document.getElementById("operator1").innerHTML = txt1;
