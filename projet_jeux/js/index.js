@@ -32,3 +32,18 @@ var person = {
 
 document.getElementById("object").innerHTML =
 person.firstName + " is " + person.age + " years old and " + person.eyeColor + " eyes." ;
+
+//Functions
+var x = myFunction(4, 3);
+var y = myFunction1(4, 3);
+
+document.getElementById("functionTest").innerHTML = x;
+document.getElementById("functionTest1").innerHTML = y;
+
+function myFunction(a, b) {
+    return a * b;
+}
+
+function myFunction1(a, b) {
+    return a + b;
+}
