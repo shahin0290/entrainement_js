@@ -87,3 +87,9 @@ function LowerCase() {
     var text = document.getElementById("changecase").innerHTML;
     document.getElementById("changecase").innerHTML = text.toLowerCase();
 }
+
+//Concat method
+var text1 = "Hello";
+var text2 = "World!";
+var text3 = text1.concat(" ",text2);
+document.getElementById("concatmethod").innerHTML = text3;
