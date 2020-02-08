@@ -75,3 +75,15 @@ function displayDate() {
 var str = "Apple, Banana, Kiwi";
 var res = str.slice(7,13);
 document.getElementById("slicemethod").innerHTML = res; 
+
+//Upper case function
+function UpperCase() {
+    var text = document.getElementById("changecase").innerHTML;
+    document.getElementById("changecase").innerHTML = text.toUpperCase();
+}
+
+//Lower case function
+function LowerCase() {
+    var text = document.getElementById("changecase").innerHTML;
+    document.getElementById("changecase").innerHTML = text.toLowerCase();
+}
