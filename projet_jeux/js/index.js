@@ -93,3 +93,10 @@ var text1 = "Hello";
 var text2 = "World!";
 var text3 = text1.concat(" ",text2);
 document.getElementById("concatmethod").innerHTML = text3;
+
+//Split method
+function splitbutton() {
+    var str = "a,b,c,d,e,f";
+    var arr = str.split(",");
+    document.getElementById("split").innerHTML = arr[3];
+}
