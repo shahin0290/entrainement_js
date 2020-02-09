@@ -152,3 +152,10 @@ document.getElementById("arrayforeach").innerHTML = text;
 function myFunction(value) {
   text += "<li>" + value + "</li>";
 } 
+
+//Concat arrays
+var myGirls = ["Cecilie ", " Lone"];
+var myBoys = [" Emil", " Tobias", " Linus "];
+var myChildren = myGirls.concat(myBoys);
+
+document.getElementById("concatarrays").innerHTML = myChildren;
