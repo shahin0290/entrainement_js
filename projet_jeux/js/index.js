@@ -122,3 +122,7 @@ document.getElementById("arrayelements").innerHTML = cars[0];
 var cars = ["Saab", "Volvo", "BMW"];
 cars[0] = "Opel";
 document.getElementById("changearray").innerHTML = cars;
+
+//Array Object
+var person = {firstName:"John", lastName:"Doe", age:46};
+document.getElementById("arrayobject").innerHTML = person["firstName"] + " " + person["lastName"];
