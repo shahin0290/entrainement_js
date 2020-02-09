@@ -100,3 +100,16 @@ function splitbutton() {
     var arr = str.split(",");
     document.getElementById("split").innerHTML = arr[3];
 }
+
+//Numbers
+var myNumber = 32;
+document.getElementById("numbers").innerHTML =
+"32 = " + "<br>" + 
+" Decimal " + myNumber.toString(10) + "<br>" +
+" Hexadecimal " + myNumber.toString(16) + "<br>" +
+" Octal " + myNumber.toString(8) + "<br>" +
+" Binary " + myNumber.toString(2);
+
+//Array
+var cars = ["Saab", "Volvo", "BMW"];
+document.getElementById("array").innerHTML = cars;
