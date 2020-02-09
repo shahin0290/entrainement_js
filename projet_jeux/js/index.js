@@ -153,9 +153,18 @@ function myFunction(value) {
   text += "<li>" + value + "</li>";
 } 
 
-//Concat arrays
+//Concat 2 arrays 
 var myGirls = ["Cecilie ", " Lone"];
 var myBoys = [" Emil", " Tobias", " Linus "];
 var myChildren = myGirls.concat(myBoys);
 
 document.getElementById("concatarrays").innerHTML = myChildren;
+
+//Concat 3 arrays
+var arr1 = ["Cecilie", "Lone"];
+var arr2 = ["Emil", "Tobias", "Linus"];
+var arr3 = ["Robin", "Morgan"];
+
+var myChildren = arr1.concat(arr2, arr3); 
+
+document.getElementById("concat3arrays").innerHTML = myChildren;
