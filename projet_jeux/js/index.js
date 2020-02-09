@@ -202,3 +202,14 @@ function ascendingOrderFunction() {
   document.getElementById("ascendingonder").innerHTML = points;
 }
 
+//Descending order array
+var points = [40, 100, 1, 5, 25, 10];
+document.getElementById("descendingorder").innerHTML = points;  
+
+function descendingorderFunction() {
+  points.sort(function(a, b){
+      return b-a
+    });
+  document.getElementById("descendingorder").innerHTML = points;
+}
+
