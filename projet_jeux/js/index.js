@@ -126,3 +126,29 @@ document.getElementById("changearray").innerHTML = cars;
 //Array Object
 var person = {firstName:"John", lastName:"Doe", age:46};
 document.getElementById("arrayobject").innerHTML = person["firstName"] + " " + person["lastName"];
+
+//Array looping with for
+var fruits, text, fLen, i;
+fruits = ["Banana", "Orange", "Apple", "Mango"];
+fLen = fruits.length;
+
+text = "<ul>";
+for (i = 0; i < fLen; i++) {
+  text += "<li>" + fruits[i] + "</li>";
+}
+text += "</ul>";
+
+document.getElementById("arraylooping").innerHTML = text;
+
+//Array forEach
+var fruits, text;
+fruits = ["Banana", "Orange", "Apple", "Mango"];
+
+text = "<ul>";
+fruits.forEach(myFunction);
+text += "</ul>";
+document.getElementById("arrayforeach").innerHTML = text;
+
+function myFunction(value) {
+  text += "<li>" + value + "</li>";
+} 
