@@ -213,3 +213,25 @@ function descendingorderFunction() {
   document.getElementById("descendingorder").innerHTML = points;
 }
 
+//Alphebetically & Numerically
+var points = [40, 100, 1, 5, 25, 10];
+document.getElementById("sortorder").innerHTML = points;  
+
+function alphabeticallyFunction1() {
+  points.sort();
+  document.getElementById("sortorder").innerHTML = points;
+}
+function numericallyFunction2() {
+  points.sort(function(a, b){return a - b});
+  document.getElementById("sortorder").innerHTML = points;
+}
+
+//For each array
+var txt = "";
+var numbers = [45, 4, 9, 16, 25];
+numbers.forEach(myFunction);
+document.getElementById("foreacharray").innerHTML = txt;
+
+function myFunction(value, index, array) {
+  txt = txt + value + "<br>"; 
+}
