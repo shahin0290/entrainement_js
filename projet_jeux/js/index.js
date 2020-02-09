@@ -113,3 +113,7 @@ document.getElementById("numbers").innerHTML =
 //Array
 var cars = ["Saab", "Volvo", "BMW"];
 document.getElementById("array").innerHTML = cars;
+
+//Array elements
+var cars = ["Saab", "Volvo", "BMW"];
+document.getElementById("arrayelements").innerHTML = cars[0];
