@@ -177,3 +177,16 @@ function sortArrayFunction() {
   fruits.sort();
   document.getElementById("sortarray").innerHTML = fruits;
 }
+
+//Reverse Array
+// Create and display an array:
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("reversearray").innerHTML = fruits;
+
+function reverseArrayFunction() {
+  // First sort the array
+  fruits.sort();
+  // Then reverse it:
+  fruits.reverse();
+  document.getElementById("reversearray").innerHTML = fruits;
+}
