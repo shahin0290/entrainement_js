@@ -235,3 +235,13 @@ document.getElementById("foreacharray").innerHTML = txt;
 function myFunction(value, index, array) {
   txt = txt + value + "<br>"; 
 }
+
+//Array map
+var numbers1 = [45, 4, 9, 16, 25];
+var numbers2 = numbers1.map(arrayMapFunction);
+
+document.getElementById("arraymap").innerHTML = numbers2;
+
+function arrayMapFunction(value, index, array) {
+  return value * 2;
+}
