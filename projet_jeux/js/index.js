@@ -168,3 +168,12 @@ var arr3 = ["Robin", "Morgan"];
 var myChildren = arr1.concat(arr2, arr3); 
 
 document.getElementById("concat3arrays").innerHTML = myChildren;
+
+//Sort Array
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("sortarray").innerHTML = fruits;
+
+function sortArrayFunction() {
+  fruits.sort();
+  document.getElementById("sortarray").innerHTML = fruits;
+}
