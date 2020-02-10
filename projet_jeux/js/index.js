@@ -245,3 +245,8 @@ document.getElementById("arraymap").innerHTML = numbers2;
 function arrayMapFunction(value, index, array) {
   return value * 2;
 }
+
+//getMonth
+var d = new Date();
+var months = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+document.getElementById("getmonth").innerHTML = months[d.getMonth()];
