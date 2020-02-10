@@ -328,3 +328,23 @@ while (i < 10) {
   i++;
 }
 document.getElementById("whileloop").innerHTML = text;
+
+//DO/While loop
+var text = ""
+var i = 0;
+
+do {
+  text += "<br>The number is " + i;
+  i++;
+}
+while (i < 10);  
+
+document.getElementById("dowhileloop").innerHTML = text;
+
+//Error Try & Catch
+try {
+    adddlert("Welcome guest!");
+  }
+  catch(err) {
+    document.getElementById("error").innerHTML = err.message;
+  }
