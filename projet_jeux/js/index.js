@@ -266,3 +266,22 @@ function comparaisonFunction() {
     }
     document.getElementById("comparaison").innerHTML = voteable;
   }
+
+  //Condition
+  function conditionFunction() {
+    var greeting;
+    var time = new Date().getHours();
+    if (time < 10) {
+      greeting = "Good morning";
+    } else if (time < 20) {
+      greeting = "Good day";
+    } else {
+      greeting = "Good evening";
+    }
+    document.getElementById("condition").innerHTML = greeting;
+}
+
+
+  if (new Date().getHours() < 18) {
+    document.getElementById("condition1").innerHTML = "Good day!";
+  }
