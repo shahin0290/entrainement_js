@@ -285,3 +285,29 @@ function comparaisonFunction() {
   if (new Date().getHours() < 18) {
     document.getElementById("condition1").innerHTML = "Good day!";
   }
+
+//Switch
+var day;
+switch (new Date().getDay()) {
+  case 0:
+    day = "Sunday";
+    break;
+  case 1:
+    day = "Monday";
+    break;
+  case 2:
+    day = "Tuesday";
+    break;
+  case 3:
+    day = "Wednesday";
+    break;
+  case 4:
+    day = "Thursday";
+    break;
+  case 5:
+    day = "Friday";
+    break;
+  case  6:
+    day = "Saturday";
+}
+document.getElementById("switch").innerHTML = "Today is " + day;
