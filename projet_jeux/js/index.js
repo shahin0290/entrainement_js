@@ -311,3 +311,11 @@ switch (new Date().getDay()) {
     day = "Saturday";
 }
 document.getElementById("switch").innerHTML = "Today is " + day;
+
+//For loop
+var text = "";
+var i;
+for (i = 0; i < 5; i++) {
+  text += "The number is " + i + "<br>";
+}
+document.getElementById("forloop").innerHTML = text;
