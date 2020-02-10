@@ -366,3 +366,17 @@ function myErrorFunction() {
       message.innerHTML = "Input is " + err;
     }
   }
+
+  //This
+  // Create an object:
+var person = {
+    firstName: "Shahin",
+    lastName : "Choudhury",
+    id     : 5566,
+    fullName : function() {
+      return this.firstName + " " + this.lastName;
+    }
+  };
+  
+  // Display data from the object:
+  document.getElementById("this").innerHTML = person.fullName();
