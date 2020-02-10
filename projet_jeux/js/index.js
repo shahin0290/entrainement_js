@@ -319,3 +319,12 @@ for (i = 0; i < 5; i++) {
   text += "The number is " + i + "<br>";
 }
 document.getElementById("forloop").innerHTML = text;
+
+//While loop
+var text = "";
+var i = 0;
+while (i < 10) {
+  text += "<br>The number is " + i;
+  i++;
+}
+document.getElementById("whileloop").innerHTML = text;
