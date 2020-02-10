@@ -250,3 +250,7 @@ function arrayMapFunction(value, index, array) {
 var d = new Date();
 var months = ["January","February","March","April","May","June","July","August","September","October","November","December"];
 document.getElementById("getmonth").innerHTML = months[d.getMonth()];
+
+//Math.Ramdom()
+document.getElementById("mathramdom").innerHTML =
+Math.floor(Math.random() * 10);
