@@ -254,3 +254,15 @@ document.getElementById("getmonth").innerHTML = months[d.getMonth()];
 //Math.Ramdom()
 document.getElementById("mathramdom").innerHTML =
 Math.floor(Math.random() * 10);
+
+//Comparaison function
+function comparaisonFunction() {
+    var age, voteable;
+    age = Number(document.getElementById("age").value);
+    if (isNaN(age)) {
+      voteable = "Input is not a number";
+    } else {
+      voteable = (age < 18) ? "Too young" : "Old enough";
+    }
+    document.getElementById("comparaison").innerHTML = voteable;
+  }
