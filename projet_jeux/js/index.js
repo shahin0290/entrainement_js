@@ -380,3 +380,31 @@ var person = {
   
   // Display data from the object:
   document.getElementById("this").innerHTML = person.fullName();
+
+  //Class method
+  class Car {
+    constructor(brand) {
+      this.carname = brand;
+    }
+    present() {
+      return "I have a " + this.carname;
+    }
+  }
+  
+  mycar = new Car("Ford");
+  
+  document.getElementById("demo").innerHTML = mycar.present();
+
+  //Class present() method
+  class Car {
+    constructor(brand) {
+      this.carname = brand;
+    }
+    present(x) {
+      return x + ", I have a " + this.carname;
+    }
+  }
+  
+  mycar = new Car("Ford");
+  
+  document.getElementById("presentmethod").innerHTML = mycar.present("Hello");
