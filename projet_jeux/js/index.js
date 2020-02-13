@@ -381,20 +381,6 @@ var person = {
   // Display data from the object:
   document.getElementById("this").innerHTML = person.fullName();
 
-  //Class method
-  class Car {
-    constructor(brand) {
-      this.carname = brand;
-    }
-    present() {
-      return "I have a " + this.carname;
-    }
-  }
-  
-  mycar = new Car("Ford");
-  
-  document.getElementById("demo").innerHTML = mycar.present();
-
   //Class present() method
   class Car {
     constructor(brand) {
@@ -408,3 +394,23 @@ var person = {
   mycar = new Car("Ford");
   
   document.getElementById("presentmethod").innerHTML = mycar.present("Hello");
+
+
+//Static method
+class Cars {
+  constructor(brand) {
+    this.carsname = brand;
+  }
+  static hello() {
+    return "Hello!!";
+  }
+}
+
+mycar = new Cars("Ford");
+
+//Call 'hello()' on the class Car:
+document.getElementById("staticmethod").innerHTML = Cars.hello();
+
+//and NOT on the 'mycar' object:
+//document.getElementById("demo").innerHTML = mycar.hello();
+//this would raise an error.
