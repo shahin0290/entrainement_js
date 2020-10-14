@@ -454,9 +454,23 @@
   </div>
 
   <div class="container block text-center">
-    <h2>46th JavaScript </h2>
+    <h2>46th JavaScript Local JavaScript Variables </h2>
+      
+        <p>Outside myFunction() carName is undefined.</p>
 
-
+        <p id="demo1"></p>
+        
+        <p id="demo2"></p>
+        
+        <script>
+        myFunction();
+        
+        function myFunction() {
+          var carName = "Volvo";
+          document.getElementById("demo1").innerHTML = typeof carName + " " + carName;
+        }
+        document.getElementById("demo2").innerHTML = typeof carName;
+        </script>
   </div>
 
   <div class="container block text-center">
