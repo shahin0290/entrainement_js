@@ -7,6 +7,14 @@ function buttonOff() {
     document.getElementById('myImage').src='../images/pic_bulboff.gif';
 }
 
+function buttonOn1() {
+  document.getElementById('myImage1').src='../../images/pic_bulbon.gif';
+}
+
+function buttonOff1() {
+  document.getElementById('myImage1').src='../../images/pic_bulboff.gif';
+}
+
 //Diplay none & block
 function displayNone() {
     document.getElementById('demo').style.display='none';
