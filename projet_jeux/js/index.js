@@ -1,4 +1,4 @@
-//BulbOn & BulbOff
+//1- BulbOn & BulbOff
 function buttonOn() {
     document.getElementById('myImage').src='../images/pic_bulbon.gif';
 }
@@ -15,7 +15,7 @@ function buttonOff1() {
   document.getElementById('myImage1').src='../../images/pic_bulboff.gif';
 }
 
-//Diplay none & block
+//2- Diplay none & block
 function displayNone() {
     document.getElementById('demo').style.display='none';
 }
@@ -24,30 +24,30 @@ function displayBlock() {
     document.getElementById('demo').style.display='block';
 }
 
-//Statement 
+//3- Statement 
 document.getElementById("demotest").innerHTML = "Hello Dolly.";
 
-//Varable
+//4- Varable
 var price1 = 5;
 var price2 = 6;
 var total = price1 + price2;
 document.getElementById("demoVariable").innerHTML = "The total is: " + total;
 
-//Variable2
+//5- Variable2
 var carName = "Volvo";
 document.getElementById("variables").innerHTML = carName; 
 
-//operator
+//6- operator
 var txt1 = "John";
 var txt2 = "Doe";
 document.getElementById("operator").innerHTML = txt1 + " " + txt2;
 
-//operator +=
+//7- operator +=
 txt1 = "What a very ";
 txt1 += "nice day";
 document.getElementById("operator1").innerHTML = txt1;
 
-//Object
+//8- Object
 var person = {
   firstName : "John",
   lastName  : "Doe",
@@ -58,12 +58,12 @@ var person = {
 document.getElementById("object").innerHTML =
 person.firstName + " is " + person.age + " years old and " + person.eyeColor + " eyes." ;
 
-//Functions
+//9- Functions
 var x = myFunction(4, 3);
 var y = myFunction1(4, 3);
 
-document.getElementById("functionTest").innerHTML = x;
-document.getElementById("functionTest1").innerHTML = y;
+document.getElementById("function1Test").innerHTML = x;
+document.getElementById("functionTest2").innerHTML = y;
 
 function myFunction(a, b) {
     return a * b;
@@ -73,7 +73,7 @@ function myFunction1(a, b) {
     return a + b;
 }
 
-//function displayDate
+//10- Function displayDate
 function displayDate() {
     document.getElementById("date").innerHTML = Date();
   }
